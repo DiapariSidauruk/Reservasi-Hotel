@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Formulir Reservasi Hotel</title>
+
+  <style type="text/css">
+    body {
+      font-family: Calibri, Arial, sans-serif;
+      background-color: #eef3f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      background-color: #dce6f2;
+      padding: 15px 0;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #b0c4de;
+    }
+
+    form {
+      background-color: #ffffff;
+      width: 70%;
+      margin: 0 auto;
+      border: 1px solid #b0c4de;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    td:first-child {
+      width: 35%;
+      font-weight: bold;
+      color: #34495e;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+      width: 95%;
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #357abd;
+    }
+
+    tr:last-child td {
+      text-align: center;
+      padding-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Formulir Reservasi Hotel</h1>
+
+  <form action="" method="post">
+    <table border="1" style="border-collapse:collapse; border-color:#d0d0d0;">
+
+      <tr>
+        <td>1. Nama</td>
+        <td><input type="text" id="nama" name="nama" /></td>
+      </tr>
+
+      <tr>
+        <td>2. Jenis Kelamin</td>
+        <td>
+          <input type="radio" id="laki" name="jk" value="Laki-Laki" />
+          <label for="laki">Laki-Laki</label>
+          <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+          <label for="perempuan">Perempuan</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>3. Email</td>
+        <td><input type="text" id="email" name="email" /></td>
+      </tr>
+
+      <tr>
+        <td>4. Nomor Telepon</td>
+        <td><input type="text" id="telepon" name="telepon" /></td>
+      </tr>
+
+      <tr>
+        <td>5. Nama Reservasi</td>
+        <td><input type="text" id="nama_reservasi" name="nama_reservasi" /></td>
+      </tr>
+
+      <tr>
+        <td>6. Tanggal</td>
+        <td><input type="date" id="tanggal" name="tanggal" /></td>
+      </tr>
+
+      <tr>
+        <td>7. Tipe Kamar</td>
+        <td>
+          <select id="tipe_kamar" name="tipe_kamar">
+            <option>Deluxe</option>
+            <option>Superior</option>
+            <option>Standard</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>8. Tipe Tempat Tidur</td>
+        <td>
+          <select id="tipe_tidur" name="tipe_tidur">
+            <option>Single bed</option>
+            <option>Double bed</option>
+            <option>Twin bed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>9. Sarapan</td>
+        <td>
+          <input type="radio" id="dengan_sarapan" name="sarapan" value="Dengan Sarapan" />
+          <label for="dengan_sarapan">Dengan Sarapan</label>
+          <input type="radio" id="tanpa_sarapan" name="sarapan" value="Tanpa Sarapan" />
+          <label for="tanpa_sarapan">Tanpa Sarapan</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>10. Tanggal Check In</td>
+        <td><input type="date" id="checkin" name="checkin" /></td>
+      </tr>
+
+      <tr>
+        <td>11. Tanggal Check Out</td>
+        <td><input type="date" id="checkout" name="checkout" /></td>
+      </tr>
+
+      <tr>
+        <td>12. Metode Pembayaran</td>
+        <td>
+          <select id="pembayaran" name="pembayaran">
+            <option>Cash</option>
+            <option>Kartu Kredit</option>
+            <option>Transfer Bank</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <input type="submit" name="submit" value="Kirim" />
+        </td>
+      </tr>
+
+    </table>
+  </form>
+</body>
+</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Formulir Reservasi Hotel</title>
+
+  <style type="text/css">
+    body {
+      font-family: Calibri, Arial, sans-serif;
+      background-color: #eef3f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      background-color: #dce6f2;
+      padding: 15px 0;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #b0c4de;
+    }
+
+    form {
+      background-color: #ffffff;
+      width: 70%;
+      margin: 0 auto;
+      border: 1px solid #b0c4de;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    td:first-child {
+      width: 35%;
+      font-weight: bold;
+      color: #34495e;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+      width: 95%;
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #357abd;
+    }
+
+    tr:last-child td {
+      text-align: center;
+      padding-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Formulir Reservasi Hotel</h1>
+
+  <form action="" method="post">
+    <table border="1" style="border-collapse:collapse; border-color:#d0d0d0;">
+
+      <tr>
+        <td>1. Nama</td>
+        <td><input type="text" id="nama" name="nama" /></td>
+      </tr>
+
+      <tr>
+        <td>2. Jenis Kelamin</td>
+        <td>
+          <input type="radio" id="laki" name="jk" value="Laki-Laki" />
+          <label for="laki">Laki-Laki</label>
+          <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+          <label for="perempuan">Perempuan</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>3. Email</td>
+        <td><input type="text" id="email" name="email" /></td>
+      </tr>
+
+      <tr>
+        <td>4. Nomor Telepon</td>
+        <td><input type="text" id="telepon" name="telepon" /></td>
+      </tr>
+
+      <tr>
+        <td>5. Nama Reservasi</td>
+        <td><input type="text" id="nama_reservasi" name="nama_reservasi" /></td>
+      </tr>
+
+      <tr>
+        <td>6. Tanggal</td>
+        <td><input type="date" id="tanggal" name="tanggal" /></td>
+      </tr>
+
+      <tr>
+        <td>7. Tipe Kamar</td>
+        <td>
+          <select id="tipe_kamar" name="tipe_kamar">
+            <option>Deluxe</option>
+            <option>Superior</option>
+            <option>Standard</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>8. Tipe Tempat Tidur</td>
+        <td>
+          <select id="tipe_tidur" name="tipe_tidur">
+            <option>Single bed</option>
+            <option>Double bed</option>
+            <option>Twin bed</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>9. Sarapan</td>
+        <td>
+          <input type="radio" id="dengan_sarapan" name="sarapan" value="Dengan Sarapan" />
+          <label for="dengan_sarapan">Dengan Sarapan</label>
+          <input type="radio" id="tanpa_sarapan" name="sarapan" value="Tanpa Sarapan" />
+          <label for="tanpa_sarapan">Tanpa Sarapan</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>10. Tanggal Check In</td>
+        <td><input type="date" id="checkin" name="checkin" /></td>
+      </tr>
+
+      <tr>
+        <td>11. Tanggal Check Out</td>
+        <td><input type="date" id="checkout" name="checkout" /></td>
+      </tr>
+
+      <tr>
+        <td>12. Metode Pembayaran</td>
+        <td>
+          <select id="pembayaran" name="pembayaran">
+            <option>Cash</option>
+            <option>Kartu Kredit</option>
+            <option>Transfer Bank</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <input type="submit" name="submit" value="Kirim" />
+        </td>
+      </tr>
+
+    </table>
+  </form>
+</body>
+</html>
